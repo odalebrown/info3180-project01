@@ -1,0 +1,35 @@
+{% extends 'base.html' %}
+
+{% block main %}
+<form method="post" action="{{ url_for('profile') }}" enctype="multipart/form-data">
+  <h1>Add Profile</h1>
+  {% if error %}
+    <div class="alert alert-danger">
+      <strong>Error:</strong> {{ error }}
+    </div>
+  {% endif %}
+  {{ form.csrf_token }}
+  <div class="form-group">
+    <strong>{{ form.firstname.label }}</strong> {{ form.firstname(class="form-control") }}
+  </div>
+  <div class="form-group">
+    <strong>{{ form.lastname.label }}</strong> {{ form.lastname(class="form-control") }}
+  </div>
+  <div class="form-group">
+    <strong>{{ form.gender.label }}</strong> {{ form.gender(class="form-control") }}
+  </div>
+  <div class="form-group">
+    <strong>{{ form.email.label }}</strong> {{ form.email(class="form-control") }}
+  </div>
+  <div class="form-group">
+    <strong>{{ form.location.label }}</strong> {{ form.location(class="form-control") }}
+  </div>
+  <div class="form-group">
+    <strong>{{ form.biography.label }}</strong> {{ form.biography(class="form-control") }}
+  </div>
+  <div class="form-group">
+    <strong>{{ form.profilePic.label }}</strong> {{ form.profilePic(class="form-control") }}
+  </div>
+  <button class="btn btn-lg btn-primary btn-block" type="submit">Add Profile</button>
+</form>
+{% endblock %}

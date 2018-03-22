@@ -1,0 +1,26 @@
+{% extends "base.html" %}
+{% block css %}
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/userprofile.css') }}" type="text/css" />
+
+{% endblock %}
+{% block main %}
+
+	<div class="container>
+        <img "src="{{ url_for('static', filename='uploads/'+user.profilePic) }}" class = "profilePic"/>
+        <div >
+           	<h2><strong>{{user.firstname}} {{user.lastname}}</strong></h2>
+           	<p> {{user.email}}</p>
+           	<p> {{user.location}}</p>
+            <p> Joined on {{user.created_on.strftime("%B %d, %Y")}}</p>
+        </div>
+        <div class="bio">
+                <p><strong>About Me: </strong></p>
+                <p>{{user.biography}}</p>
+        </div>
+        <button type="button">Send Messaage</button>
+		<button type="button">Follow</button>
+
+
+
+{% endblock %}

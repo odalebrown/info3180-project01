@@ -1,0 +1,39 @@
+ body 
+{
+    padding-top: 5rem;
+    background-color: #e0f2fb;
+}
+
+.pic
+{
+    width:80px;
+    height:90px;
+    margin: 5px;
+}
+
+h1{
+    margin-left: 20px;
+}
+.view 
+{ 
+    height: 30px;
+    width: 150px;
+    text-align: center;
+    border-radius: 5px;
+    background-color: #50f497;
+    margin-top: 10%;
+}
+
+.profile
+{    
+    display: grid;
+    grid: 100px / auto auto auto;
+    background-color: white;
+    box-shadow: 0px 2px 8px grey;
+    width:60%;
+    margin: 10px;
+    margin-left: 15px;
+    padding: 5px;
+    border-radius: 5px;
+}
+    
