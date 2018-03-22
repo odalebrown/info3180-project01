@@ -66,9 +66,9 @@ def allprofile():
         
     return redirect(url_for("home"))
 
-@app.route('/profiles/<userid>')
+@app.route('/profile/<userid>', methods=['POST', 'GET'])
 def userprofile(userid):
-    user = UserProfile.query.filter_by(id=userid).first()
+    user = UserProfile.query.filter_by(userid=userid).first()
     if user is not None:
         return render_template('userprofile.html',user=user)
         

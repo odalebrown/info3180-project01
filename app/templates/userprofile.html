@@ -6,8 +6,8 @@
 {% endblock %}
 {% block main %}
 
-	<div class="container>
-        <img "src="{{ url_for('static', filename='uploads/'+user.profilePic) }}" class = "profilePic"/>
+	<div class="container">
+        <image src="{{ url_for('static', filename='uploads/'+user.profilePic) }}" class="pic">
         <div >
            	<h2><strong>{{user.firstname}} {{user.lastname}}</strong></h2>
            	<p> {{user.email}}</p>
