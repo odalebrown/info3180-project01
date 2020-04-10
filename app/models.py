@@ -3,8 +3,8 @@ from . import db
 
 class UserProfile(db.Model):
     id = db.Column(db.Integer, primary_key=True)
-    firstname = db.Column(db.String(80))
-    lastname = db.Column(db.String(80))
+    firstname = db.Column(db.String(90))
+    lastname = db.Column(db.String(90))
     gender = db.Column(db.String(80))
     email = db.Column(db.String(80))
     location = db.Column(db.String(80))
