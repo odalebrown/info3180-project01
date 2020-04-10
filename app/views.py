@@ -13,7 +13,7 @@ from models import UserProfile
 
 
 ###
-# Routing for your applications.
+# Routing for your application.
 ###
 
 @app.route('/')
