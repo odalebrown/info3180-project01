@@ -10,6 +10,6 @@ Flask-Login
 psycopg2
 
 # ----------------------
-# Production Server
+# The Production Server
 # ----------------------
 gunicorn
