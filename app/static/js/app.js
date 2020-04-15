@@ -1,1 +1,1 @@
-/* Add your Applications JavaScript */
+/* Add your Application JavaScript */
